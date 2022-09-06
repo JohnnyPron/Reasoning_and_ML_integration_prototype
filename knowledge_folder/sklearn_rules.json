@@ -1,0 +1,656 @@
+[
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if not hadMood == Depressed"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if not hadMood == Tired"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if not hadMood == Happy"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if not hadMood == Bored"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if not hadUser == Penny"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "hasPersonality",
+        "rule": "if not hasPersonality == Optimistic"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "hasPersonality",
+        "rule": "if not hasPersonality == Flegmatic"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if hasAge<=36.00"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if not hadUser == John"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 0,
+        "feature_name": "hasGender",
+        "rule": "if hasGender == female"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Wind"
+    },
+    {
+        "current_level": 12,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Cloudy"
+    },
+    {
+        "current_level": 13,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Reading_a_book"
+    },
+    {
+        "current_level": 12,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Cloudy"
+    },
+    {
+        "current_level": 13,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Getting_closer"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Wind"
+    },
+    {
+        "current_level": 12,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Upbeat_music"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 0,
+        "feature_name": "hasGender",
+        "rule": "if hasGender == male"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Afternoon"
+    },
+    {
+        "current_level": 12,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Rap_music"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Afternoon"
+    },
+    {
+        "current_level": 12,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Telling_a_joke"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if hadUser == John"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Night"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Friend_or_family_talk_recommendation"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Night"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Melancholic_music"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if hasAge>36.00"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Noon"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Sun"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Friend_or_family_talk_recommendation"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Sun"
+    },
+    {
+        "current_level": 11,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Going_for_a_walk"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Noon"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Melancholic_music"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "hasPersonality",
+        "rule": "if hasPersonality == Flegmatic"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Cloudy"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Classical_music"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Cloudy"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Telling_a_joke"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "hasPersonality",
+        "rule": "if hasPersonality == Optimistic"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Sun"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Wind"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Snow"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Doing_some_exercises"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Snow"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Melancholic_music"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Wind"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Night"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Ordering_some_food"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Night"
+    },
+    {
+        "current_level": 10,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Getting_closer"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Sun"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Telling_a_joke"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if hadUser == Penny"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Wind"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Melancholic_music"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Wind"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Verbal_greeting"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if hadMood == Bored"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Morning"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Sun"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Playing_some_games"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Sun"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Going_for_a_walk"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Morning"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Doing_some_exercises"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if hadMood == Happy"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hasPersonality",
+        "rule": "if not hasPersonality == Flegmatic"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Morning"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if hasAge<=24.50"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if hasAge<=20.00"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Playing_some_games"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if hasAge>20.00"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Rock_music"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if hasAge>24.50"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Noon"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Snow"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Hand_wave"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Snow"
+    },
+    {
+        "current_level": 9,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Catchy_music"
+    },
+    {
+        "current_level": 7,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Noon"
+    },
+    {
+        "current_level": 8,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Reading_a_book"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Morning"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Verbal_greeting"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hasPersonality",
+        "rule": "if hasPersonality == Flegmatic"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Reading_a_book"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if hadMood == Tired"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Sun"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Snow"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Reading_a_book"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Snow"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if not hadUser == Eddy"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Hand_wave"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if hadUser == Eddy"
+    },
+    {
+        "current_level": 6,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Rock_music"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Sun"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Ordering_some_food"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if hadMood == Depressed"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if not hadUser == Caroline"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if not wasTime == Noon"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Friend_or_family_talk_recommendation"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if wasTime == Noon"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if not wasWeather == Snow"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Friend_or_family_talk_recommendation"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if wasWeather == Snow"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Melancholic_music"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if hadUser == Caroline"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "class: Staying_quiet"
+    }
+]

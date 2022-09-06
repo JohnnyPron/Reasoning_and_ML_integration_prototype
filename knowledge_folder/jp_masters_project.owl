@@ -1,0 +1,2578 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#"
+     xml:base="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadMood -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadMood">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadUser -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadUser">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasPersonality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasPersonality">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#wasTime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#wasTime">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#wasWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#wasWeather">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasGender">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">53</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">45</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">35</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Catchy_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Catchy_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Classical_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Classical_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Doing_some_exercises -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Doing_some_exercises">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">44</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Friend_or_family_talk_recommendation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Friend_or_family_talk_recommendation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Question_about_feeling"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User_comforting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Getting_closer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Getting_closer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Going_for_a_walk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Going_for_a_walk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Hand_wave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Hand_wave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Thumb_up"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">28</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Melancholic_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Melancholic_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Relaxing_music"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_time"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ordering_some_food -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ordering_some_food">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">38</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Playing_some_games -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Playing_some_games">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Question_about_feeling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Question_about_feeling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User_comforting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rap_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rap_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Reading_a_book -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Reading_a_book">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Watching_a_movie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Personality_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Relaxing_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Relaxing_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rock_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rock_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Staying_quiet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Staying_quiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Telling_a_joke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Telling_a_joke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Thumb_up -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Thumb_up">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#General_mood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Upbeat_music -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Upbeat_music">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Music_playlist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User_comforting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User_comforting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Verbal_greeting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Verbal_greeting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+        <hasPersonality rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+        <hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</hasAge>
+        <hasGender rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasGender>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Watching_a_movie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Watching_a_movie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Activity_proposition"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Interaction_with_user"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Weather"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Playing_some_games"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Playing_some_games"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s11">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Going_for_a_walk"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s12 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s12">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Going_for_a_walk"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s13 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s13">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Melancholic_music"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s14 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s14">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Verbal_greeting"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s15">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Telling_a_joke"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s16 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s16">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Watching_a_movie"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s17">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Verbal_greeting"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s18 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s18">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Telling_a_joke"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s19 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s19">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rock_music"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Going_for_a_walk"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s20 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s20">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Hand_wave"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Verbal_greeting"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Melancholic_music"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Relaxing_music"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User_comforting"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Reading_a_book"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Watching_a_movie"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#s9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+        <hadMood rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        <hadUser rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        <takenAction rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Watching_a_movie"/>
+        <wasTime rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        <wasWeather rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Angry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Anna"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Apollo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Caroline"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cloudy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Cranky"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Dinner_time"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Eddy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Emily"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Evening"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#George"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Luke"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Marvin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Megan"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Morning"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Neurotic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Noon"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Optimistic"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Outgoing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rebelious"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Rain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sad"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sam"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Snow"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Storm"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Tired"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Sun"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Wind"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Ursula"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Veronica"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#s">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#u">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadUser"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasPersonality"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Flegmatic"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadMood"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Happy"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Reading_a_book"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadUser"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hasPersonality"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#u"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Choleric"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#wasTime"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Night"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Hand_wave"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadUser"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#John"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadMood"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Bored"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Playing_some_games"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadMood"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Depressed"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#wasTime"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Afternoon"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#User_comforting"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Situation"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadUser"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Penny"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#hadMood"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Stressed"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#takenAction"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#s"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/ja/ontologies/2022/4/jp_masters_project#Relaxing_music"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

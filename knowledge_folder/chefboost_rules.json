@@ -1,0 +1,788 @@
+[
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Sad':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Marvin':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Rain':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Doing_some_exercises'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Wind':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Night':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Getting_closer'"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Dinner_time':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Ordering_some_food'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Sun':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Telling_a_joke'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Penny':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Cloudy':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Melancholic_music'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Wind':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Verbal_greeting'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Emily':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'George':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Cloudy':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Telling_a_joke'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Storm':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Classical_music'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Veronica':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Sun':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Cloudy':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Getting_closer'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'John':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Rain':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Melancholic_music'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Cloudy':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Anna':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Telling_a_joke'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Megan':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Eddy':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Telling_a_joke'"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Tired':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if obj[3]>16:"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Sun':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Ordering_some_food'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Wind':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Cloudy':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Rain':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Snow':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Hand_wave'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if obj[3]<=16:"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Rock_music'"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Happy':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if obj[3]>24:"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Dinner_time':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Sam':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Hand_wave'"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Apollo':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Catchy_music'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Morning':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Penny':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Emily':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Verbal_greeting'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Night':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Hand_wave'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Evening':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Afternoon':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Hand_wave'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Noon':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Reading_a_book'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if obj[3]<=24:"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Eddy':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Morning':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Verbal_greeting'"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Afternoon':"
+    },
+    {
+        "current_level": 5,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Playing_some_games'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'John':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Rock_music'"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Stressed':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if obj[3]<=44:"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Penny':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Melancholic_music'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Emily':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Going_for_a_walk'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Megan':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Upbeat_music'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Luke':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Rap_music'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Marvin':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Melancholic_music'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hasAge",
+        "rule": "if obj[3]>44:"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Apollo':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Anna':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Doing_some_exercises'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'George':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Classical_music'"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Depressed':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Afternoon':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Noon':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Sun':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "wasWeather",
+        "rule": "if obj[5] == 'Snow':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Melancholic_music'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Evening':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Night':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Staying_quiet'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Dinner_time':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Bored':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Morning':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Doing_some_exercises'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Evening':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Penny':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Going_for_a_walk'"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'John':"
+    },
+    {
+        "current_level": 4,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Playing_some_games'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "wasTime",
+        "rule": "if obj[6] == 'Noon':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Going_for_a_walk'"
+    },
+    {
+        "current_level": 1,
+        "return_statement": 0,
+        "feature_name": "hadMood",
+        "rule": "if obj[4] == 'Angry':"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Eddy':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Rap_music'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'Apollo':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Melancholic_music'"
+    },
+    {
+        "current_level": 2,
+        "return_statement": 0,
+        "feature_name": "hadUser",
+        "rule": "if obj[0] == 'John':"
+    },
+    {
+        "current_level": 3,
+        "return_statement": 1,
+        "feature_name": "takenAction",
+        "rule": "return 'Friend_or_family_talk_recommendation'"
+    }
+]

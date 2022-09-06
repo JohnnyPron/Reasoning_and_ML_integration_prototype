@@ -1,0 +1,109 @@
+|--- hadMood_Depressed <= 0.50
+|   |--- hadMood_Tired <= 0.50
+|   |   |--- hadMood_Happy <= 0.50
+|   |   |   |--- hadMood_Bored <= 0.50
+|   |   |   |   |--- hadUser_Penny <= 0.50
+|   |   |   |   |   |--- hasPersonality_Optimistic <= 0.50
+|   |   |   |   |   |   |--- hasPersonality_Flegmatic <= 0.50
+|   |   |   |   |   |   |   |--- hasAge <= 36.00
+|   |   |   |   |   |   |   |   |--- hadUser_John <= 0.50
+|   |   |   |   |   |   |   |   |   |--- hasGender_male <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- wasWeather_Wind <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- wasWeather_Cloudy <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Reading_a_book
+|   |   |   |   |   |   |   |   |   |   |   |--- wasWeather_Cloudy >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |   |--- class: Getting_closer
+|   |   |   |   |   |   |   |   |   |   |--- wasWeather_Wind >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Upbeat_music
+|   |   |   |   |   |   |   |   |   |--- hasGender_male >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- wasTime_Afternoon <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Rap_music
+|   |   |   |   |   |   |   |   |   |   |--- wasTime_Afternoon >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class: Telling_a_joke
+|   |   |   |   |   |   |   |   |--- hadUser_John >  0.50
+|   |   |   |   |   |   |   |   |   |--- wasTime_Night <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Friend_or_family_talk_recommendation
+|   |   |   |   |   |   |   |   |   |--- wasTime_Night >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Melancholic_music
+|   |   |   |   |   |   |   |--- hasAge >  36.00
+|   |   |   |   |   |   |   |   |--- wasTime_Noon <= 0.50
+|   |   |   |   |   |   |   |   |   |--- wasWeather_Sun <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Friend_or_family_talk_recommendation
+|   |   |   |   |   |   |   |   |   |--- wasWeather_Sun >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class: Going_for_a_walk
+|   |   |   |   |   |   |   |   |--- wasTime_Noon >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Melancholic_music
+|   |   |   |   |   |   |--- hasPersonality_Flegmatic >  0.50
+|   |   |   |   |   |   |   |--- wasWeather_Cloudy <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Classical_music
+|   |   |   |   |   |   |   |--- wasWeather_Cloudy >  0.50
+|   |   |   |   |   |   |   |   |--- class: Telling_a_joke
+|   |   |   |   |   |--- hasPersonality_Optimistic >  0.50
+|   |   |   |   |   |   |--- wasWeather_Sun <= 0.50
+|   |   |   |   |   |   |   |--- wasWeather_Wind <= 0.50
+|   |   |   |   |   |   |   |   |--- wasWeather_Snow <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Doing_some_exercises
+|   |   |   |   |   |   |   |   |--- wasWeather_Snow >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Melancholic_music
+|   |   |   |   |   |   |   |--- wasWeather_Wind >  0.50
+|   |   |   |   |   |   |   |   |--- wasTime_Night <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class: Ordering_some_food
+|   |   |   |   |   |   |   |   |--- wasTime_Night >  0.50
+|   |   |   |   |   |   |   |   |   |--- class: Getting_closer
+|   |   |   |   |   |   |--- wasWeather_Sun >  0.50
+|   |   |   |   |   |   |   |--- class: Telling_a_joke
+|   |   |   |   |--- hadUser_Penny >  0.50
+|   |   |   |   |   |--- wasWeather_Wind <= 0.50
+|   |   |   |   |   |   |--- class: Melancholic_music
+|   |   |   |   |   |--- wasWeather_Wind >  0.50
+|   |   |   |   |   |   |--- class: Verbal_greeting
+|   |   |   |--- hadMood_Bored >  0.50
+|   |   |   |   |--- wasTime_Morning <= 0.50
+|   |   |   |   |   |--- wasWeather_Sun <= 0.50
+|   |   |   |   |   |   |--- class: Playing_some_games
+|   |   |   |   |   |--- wasWeather_Sun >  0.50
+|   |   |   |   |   |   |--- class: Going_for_a_walk
+|   |   |   |   |--- wasTime_Morning >  0.50
+|   |   |   |   |   |--- class: Doing_some_exercises
+|   |   |--- hadMood_Happy >  0.50
+|   |   |   |--- hasPersonality_Flegmatic <= 0.50
+|   |   |   |   |--- wasTime_Morning <= 0.50
+|   |   |   |   |   |--- hasAge <= 24.50
+|   |   |   |   |   |   |--- hasAge <= 20.00
+|   |   |   |   |   |   |   |--- class: Playing_some_games
+|   |   |   |   |   |   |--- hasAge >  20.00
+|   |   |   |   |   |   |   |--- class: Rock_music
+|   |   |   |   |   |--- hasAge >  24.50
+|   |   |   |   |   |   |--- wasTime_Noon <= 0.50
+|   |   |   |   |   |   |   |--- wasWeather_Snow <= 0.50
+|   |   |   |   |   |   |   |   |--- class: Hand_wave
+|   |   |   |   |   |   |   |--- wasWeather_Snow >  0.50
+|   |   |   |   |   |   |   |   |--- class: Catchy_music
+|   |   |   |   |   |   |--- wasTime_Noon >  0.50
+|   |   |   |   |   |   |   |--- class: Reading_a_book
+|   |   |   |   |--- wasTime_Morning >  0.50
+|   |   |   |   |   |--- class: Verbal_greeting
+|   |   |   |--- hasPersonality_Flegmatic >  0.50
+|   |   |   |   |--- class: Reading_a_book
+|   |--- hadMood_Tired >  0.50
+|   |   |--- wasWeather_Sun <= 0.50
+|   |   |   |--- wasWeather_Snow <= 0.50
+|   |   |   |   |--- class: Reading_a_book
+|   |   |   |--- wasWeather_Snow >  0.50
+|   |   |   |   |--- hadUser_Eddy <= 0.50
+|   |   |   |   |   |--- class: Hand_wave
+|   |   |   |   |--- hadUser_Eddy >  0.50
+|   |   |   |   |   |--- class: Rock_music
+|   |   |--- wasWeather_Sun >  0.50
+|   |   |   |--- class: Ordering_some_food
+|--- hadMood_Depressed >  0.50
+|   |--- hadUser_Caroline <= 0.50
+|   |   |--- wasTime_Noon <= 0.50
+|   |   |   |--- class: Friend_or_family_talk_recommendation
+|   |   |--- wasTime_Noon >  0.50
+|   |   |   |--- wasWeather_Snow <= 0.50
+|   |   |   |   |--- class: Friend_or_family_talk_recommendation
+|   |   |   |--- wasWeather_Snow >  0.50
+|   |   |   |   |--- class: Melancholic_music
+|   |--- hadUser_Caroline >  0.50
+|   |   |--- class: Staying_quiet
